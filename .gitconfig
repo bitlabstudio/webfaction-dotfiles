@@ -1,0 +1,16 @@
+[color]
+      diff = auto
+      status = auto
+      branch = auto
+[alias]
+      st = status
+      ci = commit
+      co = checkout
+      br = branch
+      log1 = log --pretty=oneline --abbrev-commit
+      lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
+[rerere]
+      enabled = true
+[core]
+      editor = nano
+      excludesfile = ~/.gitignore_global
