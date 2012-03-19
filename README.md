@@ -5,7 +5,7 @@ would be useful to have on all our Webfaction servers.
 
 # Prerequisites
 
-* Mercurial
+* Mercurial (easy_install mercurial)
 
 # Usage
 
@@ -16,6 +16,7 @@ would be useful to have on all our Webfaction servers.
 
 Install vim with Python support:
 
+    # make sure to install Mercurial first
     cd ~
     ./webfaction-dotfiles/bin/install_vim.sh
 
@@ -28,6 +29,7 @@ Create symlinks:
     cd ~
     ln -s webfaction-dotfiles/.gitconfig
     ln -s webfaction-dotfiles/.gitignore_global
+    ln -s webfaction-dotfiles/.screenrc
     ln -s webfaction-dotfiles/.vimrc
     rm -rf .vim
     ln -s webfaction-dotfiles/.vim
