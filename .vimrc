@@ -32,7 +32,7 @@ inoremap <C-Z> <C-O>:update<CR>
 
 
 " Quick quit command
-noremap <C-b> :quit<CR>
+noremap <Leader>e :quit<CR>
 
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
