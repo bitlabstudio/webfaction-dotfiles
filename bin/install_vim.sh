@@ -6,8 +6,7 @@ ln -s webfaction-dotfiles/.gitignore_global
 ln -s webfaction-dotfiles/.screenrc
 ln -s webfaction-dotfiles/.vim
 ln -s webfaction-dotfiles/.vimrc
-mkdir .ssh && cd .ssh
-ln -s ../webfaction-dotfiles/.ssh/config
+mkdir ~/.ssh && cd ~/.ssh
 touch authorized_keys && chmod 600 authorized_keys
 cd ~ && chmod 700 .ssh && chmod go-w $HOME
 mkdir -p lib/python2.7
