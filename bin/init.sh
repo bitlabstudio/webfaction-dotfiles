@@ -57,3 +57,8 @@ echo 'export PIP_RESPECT_VIRTUALENV=true' >> $HOME/.bash_exports
 echo 'export VIRTUALENVWRAPPER_TMPDIR="$WORKON_HOME/tmp"' >> $HOME/.bash_exports
 echo "export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7" >> $HOME/.bash_exports
 echo 'source $HOME/bin/virtualenvwrapper.sh' >> $HOME/.bash_exports
+
+
+# Install supervisor
+# =============================================================================
+pip-2.7 install supervisor
