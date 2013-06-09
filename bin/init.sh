@@ -20,8 +20,8 @@ ln -s webfaction-dotfiles/.vimrc
 
 mkdir -p $HOME/bin
 cd $HOME/bin
-ln -s $HOME/webfaction-dotfiles/search.sh
-ln -s $HOME/webfaction-dotfiles/show-memory.sh
+ln -s $HOME/webfaction-dotfiles/bin/search.sh
+ln -s $HOME/webfaction-dotfiles/bin/show-memory.sh
 
 cd $HOME
 echo 'export PATH=$HOME/bin:$PATH' >> $HOME/.bash_exports
