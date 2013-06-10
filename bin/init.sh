@@ -10,9 +10,10 @@ chsh -s /bin/zsh
 # =============================================================================
 cd $HOME
 rm $HOME/.zshrc
+cp webfaction-dotfiles/.bashrc .
+cp webfaction-dotfiles/.gitconfig .
 ln -s webfaction-dotfiles/.zshrc
 ln -s webfaction-dotfiles/.bash_aliases
-ln -s webfaction-dotfiles/.gitconfig
 ln -s webfaction-dotfiles/.gitignore_global
 ln -s webfaction-dotfiles/.screenrc
 ln -s webfaction-dotfiles/.vim
@@ -62,3 +63,8 @@ echo 'source $HOME/bin/virtualenvwrapper.sh' >> $HOME/.bash_exports
 # Install supervisor
 # =============================================================================
 pip-2.7 install supervisor
+
+echo "All done!"
+echo "Don't forget to personalise your .gitconfig:"
+echo 'git config --global user.email "<yourmail@gmail.com>"'
+echo 'git config --global user.name "Your Name"'
