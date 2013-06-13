@@ -16,6 +16,7 @@ ln -s webfaction-dotfiles/.zshrc
 ln -s webfaction-dotfiles/.bash_aliases
 ln -s webfaction-dotfiles/.gitignore_global
 ln -s webfaction-dotfiles/.screenrc
+ln -s webfaction-dotfiles/.tmux.conf
 ln -s webfaction-dotfiles/.vim
 ln -s webfaction-dotfiles/.vimrc
 
