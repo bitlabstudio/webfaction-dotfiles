@@ -3,39 +3,28 @@
 This repository shall contain settings for .bashrc, .gitconfig and .vimrc that
 would be useful to have on all our Webfaction servers.
 
-# Prerequisites
-
-* Mercurial (easy_install mercurial)
-
 # Usage
 
 ``ssh`` into your Webfaction server, then clone this repository:
 
     cd ~
-    git clone git://github.com/bitmazk/webfaction-dotfiles.git
+    git clone https://github.com/bitmazk/webfaction-dotfiles.git
 
-Install vim with Python support:
+The script will ask you to enter your password in order to change the shell
+to zsh, after that it will take a minute or so to install mercurial and vim.
 
-    # make sure to install Mercurial first
-    cd ~
-    ./webfaction-dotfiles/bin/install_vim.sh
+When it's done it will remind you of the following::
 
-Add line to ``.bashrc``:
+    Don't forget to personalise your .gitconfig:
+    git config --global user.email "<yourmail@gmail.com>"
+    git config --global user.name "Your Name"
 
-    export PATH=$HOME/bin:$PATH
+This is necessary in case you want to create your Django project right on the
+server. In order to make the initial commit, you need to provide your git
+user name and email.
 
-Create symlinks:
+Further preparation and usage of this script is described in my PyCon SG 2013
+tutorial. The slides can be found here: https://speakerdeck.com/mbrochh/hosting-complex-web-applications-on-webfaction-servers
 
-    cd ~
-    ln -s webfaction-dotfiles/.gitconfig
-    ln -s webfaction-dotfiles/.gitignore_global
-    ln -s webfaction-dotfiles/.screenrc
-    ln -s webfaction-dotfiles/.vimrc
-    rm -rf .vim
-    ln -s webfaction-dotfiles/.vim
-
-Profit!
-
-# TODO
-
-* Create setup script that installs all prerequisites
+If you would like to kickstart your Django project right on the server after
+installing the webfaction dotfiles, please check out https://github.com/bitmazk/django-project-template
