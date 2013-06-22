@@ -11,7 +11,7 @@ would be useful to have on all our Webfaction servers.
     git clone https://github.com/bitmazk/webfaction-dotfiles.git
 
 The script will ask you to enter your password in order to change the shell
-to zsh, after that it will take a minute or so to install mercurial and vim.
+to zsh, after that it will take a few minutes to install mercurial and vim.
 
 When it's done it will remind you of the following::
 
