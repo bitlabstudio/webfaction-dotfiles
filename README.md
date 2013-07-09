@@ -9,6 +9,7 @@ would be useful to have on all our Webfaction servers.
 
     cd ~
     git clone https://github.com/bitmazk/webfaction-dotfiles.git
+    ./webfaction-dotfiles/bin/init.sh
 
 The script will ask you to enter your password in order to change the shell
 to zsh, after that it will take a few minutes to install mercurial and vim.
