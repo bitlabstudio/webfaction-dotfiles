@@ -49,7 +49,7 @@ ln -s ~/opt/vim/bin/vim
 # =============================================================================
 mkdir -p $HOME/lib/python2.7
 easy_install-2.7 virtualenv
-easy_install-2.7 pip
+easy_install-2.7 pip==1.3
 pip-2.7 install virtualenvwrapper==3.5
 
 echo 'export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7' >> $HOME/.bash_exports
@@ -69,3 +69,4 @@ echo "All done!"
 echo "Don't forget to personalise your .gitconfig:"
 echo 'git config --global user.email "<yourmail@gmail.com>"'
 echo 'git config --global user.name "Your Name"'
+echo 'Also install pip==1.3 into your virtualenv'
