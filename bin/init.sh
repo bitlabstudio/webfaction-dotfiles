@@ -44,22 +44,8 @@ make && make install
 cd ~/bin
 ln -s ~/opt/vim/bin/vim
 
-
-# Install virtualenv and virtualenvwrapper
-# =============================================================================
-mkdir -p $HOME/lib/python2.7
-easy_install-2.7 virtualenv
-easy_install-2.7 pip==1.3
-pip-2.7 install virtualenvwrapper==3.5
-
-echo 'export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7' >> $HOME/.bash_exports
-echo 'export WORKON_HOME=$HOME/Envs' >> $HOME/.bash_exports
-echo 'export PIP_VIRTUALENV_BASE=$WORKON_HOME' >> $HOME/.bash_exports
-echo 'export PIP_RESPECT_VIRTUALENV=true' >> $HOME/.bash_exports
-echo 'export VIRTUALENVWRAPPER_TMPDIR="$WORKON_HOME/tmp"' >> $HOME/.bash_exports
-echo "export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7" >> $HOME/.bash_exports
-echo 'source $HOME/bin/virtualenvwrapper.sh' >> $HOME/.bash_exports
-
+cd ~/webfaction-dotfiles/bin
+./install_venv.sh
 
 # Install supervisor
 # =============================================================================
